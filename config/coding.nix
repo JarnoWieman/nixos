@@ -31,7 +31,7 @@
         ca = "commit --amend";
         pl = "pull";
         plr = "pull --rebase";
-        ps = "ps";
+        ps = "push";
         yeet = "'!git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)'";
         pop = "stash pop";
       }; 
