@@ -8,6 +8,7 @@
     yq-go
     jq
     kubectl
+    kubectx
     kubernetes-helm
     talosctl
     docker
