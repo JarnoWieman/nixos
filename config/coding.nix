@@ -1,6 +1,18 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    vscode
+    git
+    gh
+    yq-go
+    jq
+    kubectl
+    kubernetes-helm
+    talosctl
+    docker
+  ];
+
   programs.git = {
     enable = true;
     config = {
@@ -25,15 +37,4 @@
       }; 
     };
   };
-  
-  environment.systemPackages = with pkgs; [
-    vscode
-    git
-    yq-go
-    jq
-    kubectl
-    kubernetes-helm
-    talosctl
-    docker
-  ];
 }

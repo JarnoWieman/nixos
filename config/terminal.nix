@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    starship
+  ];
+
   programs.starship = {
     enable = true;
 
@@ -68,8 +72,4 @@
       export netshoot="nicolaka/netshoot"
     '';
   };
-
-  environment.systemPackages = with pkgs; [
-    starship
-  ];
 }

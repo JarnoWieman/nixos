@@ -2,9 +2,16 @@
 
 {
   environment.systemPackages = with pkgs; [
-  firefox
-  thunderbird
-  keepassxc
+    firefox
+    thunderbird
+    keepassxc
+    onedrive
+    openrgb
+    discord
+    betterdiscordctl
+    spotify
+    gimp
+    btop
   ];
 
   services.xserver.enable = true;

@@ -5,12 +5,13 @@ let
 in
 
 {
-  programs.steam.enable = true;
-
   environment.systemPackages = with pkgs; [
     steam
     heroic
     lutris
     curseforge
+    gpu-screen-recorder
   ];
+
+  programs.steam.enable = true;
 }
