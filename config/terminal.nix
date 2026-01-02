@@ -61,6 +61,14 @@
     };
   };
 
+  programs.bash = {
+    enable = true;
+    interactiveShellInit = ''
+      export kubeconfig="$HOME/.kube/config"
+      export netshoot="nicolaka/netshoot"
+    '';
+  };
+
   environment.systemPackages = with pkgs; [
     starship
   ];
