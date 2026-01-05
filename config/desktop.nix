@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    vscode
     firefox
     thunderbird
     keepassxc
