@@ -42,7 +42,8 @@
       };
 
       "org/gnome/Console" = {
-        custom-font = "0xProto Nerd Font 10";
+        use-system-font = false;
+        custom-font = "Hurmit Nerd Font 12";
       };
 
       "org/gnome/desktop/interface" = {
@@ -56,6 +57,6 @@
   }];
 
   fonts.packages = with pkgs; [
-    nerd-fonts._0xproto
+    nerd-fonts.hurmit
   ];
 }
