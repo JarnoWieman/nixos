@@ -10,7 +10,8 @@ in
     heroic
     lutris
     curseforge
-    gpu-screen-recorder
+    prismlauncher
+    gpu-screen-recorder-gtk
   ];
 
   programs.steam.enable = true;
