@@ -14,6 +14,9 @@
     gimp
     btop
     usbimager
+    gnomeExtensions.desktop-clock
+    gnomeExtensions.bluetooth-battery-meter
+    gnomeExtensions.system-monitor
   ];
 
   services.xserver.enable = true;
@@ -47,7 +50,9 @@
       };
 
       "org/gnome/desktop/interface" = {
+        accent-color = "purple";
         color-scheme = "prefer-dark";
+        cursor-theme = "Bibata-Modern-Ice";
       };
 
       "org/gnome/desktop/wm/preferences" = {
@@ -59,4 +64,9 @@
   fonts.packages = with pkgs; [
     nerd-fonts.hurmit
   ];
+
+  programs.kdeconnect = {
+    enable = true;
+    package = pkgs.gnomeExtensions.gsconnect;
+  };
 }

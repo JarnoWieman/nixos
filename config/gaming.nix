@@ -12,6 +12,7 @@ in
     curseforge
     prismlauncher
     gpu-screen-recorder-gtk
+    antimicrox
   ];
 
   programs.steam.enable = true;
